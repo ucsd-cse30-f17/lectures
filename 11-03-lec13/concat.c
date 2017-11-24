@@ -15,6 +15,9 @@ char* my_strappend(char* s1, char* s2) {
 
 
 int main() {
+  int* nums = malloc(sizeof(int) * 10);
+  nums[4] = 100;
+  printf("%d\n", *(4 + nums));
   char* added = my_strappend("hello, ", "cse30");
   printf("%s (%d characters long)\n", (added), strlen(added));
 }
